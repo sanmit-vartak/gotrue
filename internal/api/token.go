@@ -69,11 +69,6 @@ type PKCEGrantParams struct {
 	CodeVerifier string `json:"code_verifier"`
 }
 
-// IdGrantParams are the parameters the adminUserCreateCustomSignInToken method accepts
-type IdGrantParams struct {
-	UserID uuid.UUID `json:"user_id"`
-}
-
 const useCookieHeader = "x-use-cookie"
 const InvalidLoginMessage = "Invalid login credentials"
 
